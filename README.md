@@ -9,8 +9,8 @@ This is an official implementation of the Green-guided Self-supervised Learning 
 3. [GSSL Architecture](#gssl-architecture).
 4. [Installation](#installation).
 5. [Dataset Preprocessing](#datasets-preprocessing-for-pretrain-model-gssl).
-6. [Training: GSSL model](#training:-gssl-model)
-7. [Evaluation](#evaluation).
+6. [Training GSSL model](#training-gssl-model).
+8. [Evaluation](#evaluation).
 
 
 ## Datasets
@@ -98,7 +98,7 @@ python folder2pkl.py --image-folder <path/to/processed green images/folder> --sa
 cd ..
 ```
 
-## Training: GSSL model
+## Training GSSL model
 Pretraining with ViT-S on a single-GPUs node:
 
 ```shell
@@ -108,7 +108,7 @@ python main.py \
     --data-index ./data_index/pretraining_dataset.pkl \
     --save-path <path/to/save/checkpoints> 
 ```
-NVIDIA GeForce 3090 GPU with 24GB memory are used in our experiments
+NVIDIA GeForce 3090 GPU with 19GB memory are used in our experiments
 CUDA Version: 12.0
 
 ## Evaluation 
@@ -123,22 +123,30 @@ We evaluate our pretrain model GSSL on three benchmark datasets:
 ```
 ├── dataset
     ├── train
-        ├── class1
+        ├── DR1
             ├── image1.jpg
             ├── image2.jpg
             ├── ...
-        ├── class2
+        ├── DR2
             ├── image3.jpg
             ├── image4.jpg
             ├── ...
-        ├── class3
+        ├── DR3
         ├── ...
     ├── val
     ├── test
 ```
 Here, `val` and `test` have the same structure of `train`
 
-## Fine-tuning Evalaution 
+2\. Crop and resize:
+```shell
+cd utils
+python crop.py -n 8 --crop-size 512 --image-folder <path/to/image/dataset> --output-folder <path/to/processed/dataset>
+cd ..
+```
+
+### Fine-tuning Evalaution
+
 Fine-tuning evaluation on aptos2019 dataset on one GPU:
 ```shell
 python eval.py \
@@ -147,7 +155,12 @@ python eval.py \
     --checkpoint <path/to/pretrained/model/epoch_xxx.pt> \
     --save-path <path/to/save/eval/checkpoints>
 ```
+you can change --dataset to any of the three evaluation datasets:
+* aptos2019
+* messidor2
+* ddr
 
+For --arch choice, you have to use as same as architecture used in the pretraining model. 
 
 ## Results 
 Add the table 
