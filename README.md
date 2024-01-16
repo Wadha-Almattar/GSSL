@@ -1,17 +1,19 @@
 # Green-guided Self-Supervised Learning for Diabetic Retinopathy Grading (GSSL)
 This is an official implementation of the Green-guided Self-supervised Learning Framework for Diabetic Retinopathy Grading 
 
-## Requirements
-
 
 ## Contents
-1. [Datasets](#datasets).
-3. [GSSL Architecture](#gssl-architecture).
-4. [Installation](#installation).
-5. [Dataset Preprocessing](#datasets-preprocessing-for-pretrain-model-gssl).
-6. [Training GSSL model](#training-gssl-model).
-8. [Evaluation](#evaluation).
+1. [Introduction](#introduction)
+2. [Datasets](#datasets)
+3. [GSSL Architecture](#gssl-architecture)
+4. [Installation](#installation)
+5. [Dataset Preprocessing](#datasets-preprocessing-for-pretrain-model-gssl)
+6. [Training GSSL model](#training-gssl-model)
+8. [Evaluation](#evaluation)
 
+
+## Introduction
+Contrastive self-supervised learning is an effective training approach for medical imaging tasks, mainly when well-annotated datasets are limited, which allows for extracting robust and reliable representations from unlabeled data without human annotation. To attain exceptional performance in the grading of Diabetic Retinopathy, a substantial quantity of labeled data is necessary. However, this data collection and annotation process can be costly and time-consuming. To tackle this problem, we suggest implementing a contrastive self-supervised framework named Green-guided self-supervised learning to make the most of the representation of fundus images by using a small number of unlabeled fundus images. First, we employ the data stored in the green channel to enhance the visibility of the fundus image characteristics, making them observable using saliency guidance. Furthermore, we provide empirical evidence demonstrating that a restricted quantity of dual-view fundus images yields comparable outcomes to single-view images Moreover, we highlight the potency of the projection head and the significance of the residual connection in extracting intricate features that steer the whole training process, enhancing performance on the subsequent tasks. We assessed our method using three standard diabetic retinopathy datasets. Our approach surpassed the state-of-the-art self-supervised learning techniques, utilizing only a few unlabeled fundus images.
 
 ## Datasets
 
