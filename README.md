@@ -10,6 +10,9 @@ This is an official implementation of the Green-guided Self-supervised Learning 
 5. [Dataset Preprocessing](#datasets-preprocessing-for-pretrain-model-gssl)
 6. [Training GSSL model](#training-gssl-model)
 8. [Evaluation](#evaluation)
+9. [Results](#results)
+10. [Citation](#citation)
+11. [Acknowledgements](#acknowledgements)
 
 
 ## Introduction
