@@ -8,7 +8,17 @@ This is an official implementation of the Green-guided Self-supervised Learning 
 
 
 
-## Introduction
+## Datasets
+
+### pretraining Dataset
+* ODM (link)
+
+
+### Evaluation Datasets
+* DDR [homepage](https://github.com/nkicsl/DDR-dataset).
+* APTOS 2019 [homepage](https://www.kaggle.com/c/aptos2019-blindness-detection/overview).
+* Messidor-2 [images](https://www.adcis.net/en/third-party/messidor2/) , [Labels](https://www.kaggle.com/datasets/google-brain/messidor2-dr-grades) 
+
 
 
 ## GSSL Architecture 
