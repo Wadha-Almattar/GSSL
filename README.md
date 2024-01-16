@@ -76,6 +76,14 @@ cd ..
 ```
 Here, `-n` is the number of workers.
 
+<p align="center">
+  <img algin="center" src="/images/salient_green.png " title="title" >
+  <figcaption> Green-channel Extraction: Selected dual-view fundus images from ODM dataset. (a) Dual-view fundus images in RGB color space. (b) Corresponding green-channel fundus images.  </figcaption>
+  </p>  
+
+
+remote.kfupm.edu.sa
+
 ### Crop and Resize
 ```shell
 cd utils
@@ -92,6 +100,13 @@ python saliency_detect.py -n 8 --image-folder <path/to/processed green images/da
 cd ..
 ```
 Here, `-n` is the number of workers.
+
+<p align="center">
+  <img algin="center" src="/images/salient_green.png " title="title" >
+  <figcaption> The visualization of the salient maps of a fundus image. a) original fundus image in RGB color space. b) The salient map is detected from the RGB fundus image. c) The salient map is detected from the green-channel fundus image.  </figcaption>
+  </p>  
+
+
 
 ### Prepare the dataset in a pickle file format
 The pickle file contains the pretrain dataset (ODM) along with the salient map of each green-channel image. 
