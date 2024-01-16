@@ -27,17 +27,15 @@ Our constructed ODM dataset comprises 5100 pairs of two-field fundus images, eac
 
 #### ODM dataset variants
 We create four versions of Optic-disc (OD), Macula (MA), Optic-disc and Macula Small ODM-S, and Optic-disc and Macula Green ODM-G, Table 1 describes briefly each variant. The OD dataset comprises 2545 single- view fundus images obtained with the optic disc (OD) posi- tioned at the center. A new perspective was created using the MA dataset, which consists of 2544 fundus images collected with a focus on the macula. ODM-S is a subset of the original ODM dual-view dataset with the same amount of samples as the OD and MA datasets. It differs from OD and MA datasets in that the ODM-S specifically focuses on examples of dual views. The last variant, ODM-G, includes dual-view fundus images that solely contain the green channel while maintaining the same number of samples as ODM.
-(Add the table)
 
 <p align="center">
-  <img algin="center" src="/images/..png" title="title" >
-  <figcaption> caption  </figcaption>
+  <img algin="center" src="/images/ODM_variants.png" title="title" >
+  <figcaption>  </figcaption>
   </p>
   
-(Add image to MA , OD) 
 <p align="center">
-  <img algin="center" src="/images/..png" title="title" >
-  <figcaption> caption  </figcaption>
+  <img algin="center" src="/images/MAOD.png" title="title" >
+  <figcaption>Selected dual-view fundus images from ODM dataset. (a) Dual-view fundus images in RGB color space. (b) Corresponding green-channel fundus images.  </figcaption>
   </p>
 
 ### Evaluation Datasets
@@ -50,8 +48,8 @@ We create four versions of Optic-disc (OD), Macula (MA), Optic-disc and Macula S
 ## GSSL Architecture 
 
 <p align="center">
-  <img algin="center" src="/images/..png" title="title" >
-  <figcaption> caption  </figcaption>
+  <img algin="center" src="/images/GSSL.png" title="title" >
+  <figcaption> The proposed Green-guided self-supervised learning (GSSL) framework. The Green-channel extraction component extracts green-channel knowledge from RGB dual-view fundus image. Two augmented images are derived from the green dual- view image and fed to two encoders. The query encoder is the base encoder where the SSL learning is achieved. The key encoder is a momentum encoder that supports the query encoder by focusing on green-salient guidance. The projection head design consists of two layers with residual connection, batch normalization and ReLU.  </figcaption>
   </p> 
 
 ## Installation
