@@ -77,7 +77,7 @@ cd ..
 Here, `-n` is the number of workers.
 
 <p align="center">
-  <img algin="center" src="/images/salient_green.png " title="title" >
+  <img algin="center" src="/images/green_images.png " title="title" >
   <figcaption> Green-channel Extraction: Selected dual-view fundus images from ODM dataset. (a) Dual-view fundus images in RGB color space. (b) Corresponding green-channel fundus images.  </figcaption>
   </p>  
 
