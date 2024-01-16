@@ -82,7 +82,6 @@ Here, `-n` is the number of workers.
   </p>  
 
 
-remote.kfupm.edu.sa
 
 ### Crop and Resize
 ```shell
@@ -183,7 +182,10 @@ you can change --dataset to any of the three evaluation datasets:
 For --arch choice, you have to use as same as architecture used in the pretraining model. 
 
 ## Results 
-Add the table 
+<p align="center">
+  <img algin="center" src="/images/results.png " title="title" >
+  <figcaption> Comparison results with State-of-the-art self-supervised models on three benchmark datasets: APTOS, Messidor, and DDR. GSSL is trained with limited green dual-view fundus image samples using ViT-s as the backbone feature extractor. Our constructed dataset ODM-G contains 5,100 green dual-view fundus images. Results are reported in Kappa score.  </figcaption>
+  </p>  
 
 
 
