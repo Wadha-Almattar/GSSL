@@ -55,15 +55,26 @@ We create four versions of Optic-disc (OD), Macula (MA), Optic-disc and Macula S
 ## Installation
 To install the dependencies, run:
 https://github.com/Wadha-Almattar/GSSL
-```
+
+1. Frisr, clone the repository 
+```shel
 git clone https://github.com/Wadha-Almattar/GSSL.git
+```
+2. Access GSSL
+
+```shell
 cd GSSL
+```
+
+3. Create an environment and name it gssl
+
+```shell
 conda create -n gssl python=3.8.0
 conda activate gssl
 pip install -r requirements.txt
 ```
 
-## Datasets Preprocessing for Pretrain model GSSL 
+## Dataset Preprocessing for Pretrain model GSSL 
 
 ### Green channel extraction
 
