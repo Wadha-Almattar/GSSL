@@ -146,7 +146,7 @@ python main.py \
     --data-index ./data_index/pretraining_dataset.pkl \
     --save-path <path/to/save/checkpoints> 
 ```
-NVIDIA GeForce 3090 GPU with 19GB memory are used in our experiments
+We run the expermints on single GPU NVIDIA GeForce 3090 with 19GB memory.
 CUDA Version: 12.0
 
 ## Evaluation 
