@@ -73,8 +73,16 @@ cd GSSL
 ```shell
 conda create -n gssl python=3.8.0
 conda activate gssl
+```
+
+4. Install the requirements at the gssl environment
+
+```shell
 pip install -r requirements.txt
 ```
+   
+
+
 
 ## Dataset Preprocessing for Pretrain model GSSL 
 
