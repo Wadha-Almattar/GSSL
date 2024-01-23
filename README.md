@@ -222,5 +222,4 @@ if you find this code helpful in your research or work, please cite the followin
 
 
 ## Acknowledgements
-This work is funded by SDAIA-KFUPM Joint Research Center for Artificial Intelligence at KinFahd University of Petroleum & Minerals (KFUPM) under grant number (XXX) .
-
+The authors would like to acknowledge the support received from the Saudi Data and AI Authority (SDAIA) and King Fahd University of Petroleum and Minerals (KFUPM) under SDAIA-KFUPM Joint Research Center for Artificial Intelligence Grant no. JRC-AI-XXX-XX
